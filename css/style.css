@@ -1,0 +1,396 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(superslides.css);
+@import url(baguetteBox.min.css);
+
+/* Global varibles */
+:root {
+    --orange-color: #d65106;
+    --black-color : #010101;
+    --white-color : #fff;
+}
+
+/*=================== Basic Style ================*/
+body {
+    color      : #666666;
+    font-size  : 15px;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.80857;
+}
+
+/* Start Navbar */
+.top-navbar {
+    position: relative;
+    z-index : 10;
+}
+
+.navbar.navbar-expand-lg {
+    border-radius: 0px 0px 100px 100px;
+    padding      : 15px 0px;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item.active .nav-link:focus,
+.navbar-nav .nav-item.active .nav-link:hover {
+    background-color: var(--orange-color);
+    border-radius   : 4px;
+    color           : var(--white-color);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color    : var(--black-color);
+    font-size: 16px;
+    padding  : 10px 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: var(--orange-color);
+    border-radius   : 4px;
+    color           : var(--white-color);
+}
+
+.navbar-nav a.dropdown-item:hover {
+    background-color: var(--orange-color);
+    color           : var(--white-color);
+}
+
+.navbar-toggler {
+    background-color: var(--orange-color);
+}
+
+/* End Navbar */
+
+/* Start Sliders */
+.cover-slides {
+    height: 100vh;
+}
+
+.slides-container .container {
+    height  : 100%;
+    position: relative;
+    z-index : 2;
+}
+
+.slides-navigation a {
+    background-color: var(--orange-color);
+    position        : absolute;
+    height          : 50px;
+    width           : 50px;
+    color           : var(--white-color);
+    font-size       : 20px;
+    display         : flex;
+    top             : 50%;
+    transition      : all .3s ease-in-out;
+    text-align      : center;
+    border          : 2px solid var(--white-color);
+    border-radius   : 7px;
+    justify-content : center;
+    align-items     : center;
+    text-decoration : none;
+
+}
+
+.slides-navigation a .next {
+    right: 0;
+}
+
+.slides-navigation a i {
+    font-size: 36px;
+}
+
+.slides-navigation a:hover {
+    background-color: var(--black-color);
+}
+
+.cover-slides .container>.row {
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+}
+
+.cover-slides .container>.row {
+    height: 100%;
+}
+
+.btn-main {
+    background-color: var(--orange-color);
+    font-size       : 20px;
+    text-transform  : uppercase;
+    color           : var(--white-color);
+    padding         : 12px 30px;
+}
+
+.btn-main:hover {
+    background-color: #333333;
+    border-color    : #333333;
+    color           : var(--white-color);
+}
+
+.slides-container h1 {
+    color    : var(--white-color);
+    font-size: 4rem;
+}
+
+.slides-container p {
+    color    : var(--white-color);
+    font-size: 17px;
+}
+
+/* End Sliders */
+/* Start About-section */
+.about {
+    background     : #fff url(/images/about-bg.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+
+.about-img {
+    box-shadow: 20px 20px 0px 0 var(--orange-color);
+}
+
+.inner-column h1 {
+    color    : var(--black-color);
+    font-size: 30px;
+}
+
+.inner-column h1 span {
+    color: var(--orange-color);
+}
+
+.inner-column h6,
+.inner-column p {
+    color: var(--black-color);
+}
+
+/* End About-section */
+/* Start QT Section */
+.qt {
+    background           : #fff url(/images/qt-bg.jpg) no-repeat center;
+    background-size      : cover;
+    padding              : 100px 0;
+    background-attachment: fixed;
+    position             : relative;
+    background-position  : center center;
+}
+
+.qt p {
+    font-size  : 35px;
+    font-weight: 300;
+    line-height: 55px;
+
+}
+
+/* End QT Section */
+
+/* Start Gallery */
+.tz-gallery .lightbox img {
+    width     : 100%;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.tz-gallery .lightbox {
+    border       : 3px solid #d65106;
+    display      : inline-block;
+    margin-bottom: 30px;
+
+}
+
+.tz-gallery img:hover {
+    transform : scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    border    : none;
+}
+
+/* End Gallery */
+
+/* Start Customer Reviews */
+.carousel-inner .carousel-item .img-box {
+    width : 135px;
+    height: 135px;
+}
+
+.carousel-inner .carousel-item h5 {
+    color: var(--orange-color);
+}
+
+.carousel-control-prev {
+    left: -100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: var(--orange-color);
+    width           : 7%;
+    height          : 50px;
+    opacity         : 1;
+    border-radius   : 7px;
+    border          : none;
+    position        : absolute;
+    top             : 50%;
+    right           : -100px;
+}
+
+/* End Customer Reviews */
+
+/* Start Contact */
+.contact-info {
+    background-color: var(--orange-color);
+    border-radius   : 100px;
+}
+
+.contact-info i {
+    font-size    : 35px;
+    background   : #fff;
+    color        : #d65106;
+    border-radius: 5px;
+    width        : 60px;
+    height       : 62px;
+    line-height  : 62px;
+    text-align   : center;
+}
+
+.arrow-right {
+    position: relative;
+}
+
+.arrow-right::after {
+    content    : "\f101";
+    font-family: 'FontAwesome';
+    position   : absolute;
+    color      : #fff;
+    top        : -25%;
+    right      : 0;
+    font-size  : 56px;
+    /* top     : 0;
+    right      : 0;
+    font-size  : 60px;
+    line-height: 60px; */
+
+}
+
+/* End Contact */
+/* Start Footer  */
+.footer {
+    background-color: var(--black-color);
+}
+
+.bg-footer {
+    background-image     : url(../images/footer-bg.jpg);
+    background-attachment: scroll;
+    background-clip      : initial;
+    background-color     : rgba(0, 0, 0, 0);
+    background-origin    : initial;
+    background-position  : center center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    position             : relative;
+}
+
+.bg-footer::before {
+    background: #010101;
+    content   : "";
+    height    : 100%;
+    left      : 0;
+    position  : absolute;
+    top       : 0;
+    width     : 100%;
+    z-index   : 1;
+    opacity   : 0.8;
+}
+
+.footer .container {
+    position: relative;
+    z-index : 1;
+}
+
+.footer .main-footer h5 {
+    border-bottom : 2px solid rgba(207, 166, 113, 0.5);
+    padding-bottom: 10px;
+}
+
+.footer .main-footer ul {
+    line-height: 40px;
+}
+
+.footer .main-footer .lead {
+    font-size: 16px;
+}
+
+.footer .main-footer a:hover {
+    text-decoration: none;
+    color          : var(--orange-color) !important;
+}
+
+.footer .main-footer .SUBSCRIBE input[type="text"] {
+    height    : 50px;
+    background: var(--black-color);
+    outline   : none;
+}
+
+.footer .main-footer .SUBSCRIBE input[type="text"]:focus {
+    outline: none;
+}
+
+.footer .main-footer .SUBSCRIBE a {
+    border-radius: 0;
+    width        : 100%;
+}
+
+.footer .main-footer .SUBSCRIBE .social li {
+    font-size       : 14px;
+    background-color: #fff;
+    width           : 40px;
+    border-radius   : 4px;
+    margin          : 6px;
+}
+
+.footer .main-footer .SUBSCRIBE .social li i {
+    color: var(--orange-color);
+}
+
+.copyright {
+    background-color: var(--black-color);
+    border-top      : 2px solid rgba(207, 166, 113, 0.5);
+    padding-top     : 20px;
+    width           : 100%;
+    position        : relative;
+}
+
+.copyright .lead {
+    font-size: 16px;
+}
+
+.copyright .lead a {
+    cursor         : pointer;
+    text-decoration: none;
+    color          : rgb(252, 15, 106);
+
+}
+
+.copyright .lead a:hover {
+    color: var(--white-color);
+}
+
+.copyright .arrow-up {
+    right           : 50px;
+    bottom          : 10px;
+    background-color: var(--orange-color);
+    color           : #fff;
+    padding         : 11px;
+    font-size       : 16px;
+    border-radius   : 4px;
+    line-height     : 20px;
+}
+
+/* End Footer  */
