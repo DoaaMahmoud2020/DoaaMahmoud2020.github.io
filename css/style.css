@@ -82,21 +82,21 @@ body {
 }
 
 .slides-navigation a {
-    background-color: var(--orange-color);
-    position        : absolute;
-    height          : 50px;
-    width           : 50px;
-    color           : var(--white-color);
-    font-size       : 20px;
-    display         : flex;
-    top             : 50%;
-    transition      : all .3s ease-in-out;
-    text-align      : center;
-    border          : 2px solid var(--white-color);
-    border-radius   : 7px;
-    justify-content : center;
-    align-items     : center;
-    text-decoration : none;
+    background-color   : var(--orange-color);
+    position           : absolute;
+    height             : 50px;
+    width              : 50px;
+    color              : var(--white-color);
+    font-size          : 20px;
+    display            : flex;
+    top                : 50%;
+    transition         : all .3s ease-in-out;
+    text-align         : center;
+    /* border          : 2px solid var(--white-color); */
+    border-radius      : 4px;
+    justify-content    : center;
+    align-items        : center;
+    text-decoration    : none;
 
 }
 
@@ -231,10 +231,10 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
     background-color: var(--orange-color);
-    width           : 7%;
+    width           : 50px;
     height          : 50px;
     opacity         : 1;
-    border-radius   : 7px;
+    border-radius   : 4px;
     border          : none;
     position        : absolute;
     top             : 50%;
@@ -245,15 +245,15 @@ body {
 
 /* Start Contact */
 .contact-info {
-    background-color: var(--orange-color);
-    border-radius   : 100px;
+    background-color   : var(--orange-color);
+    /* border-radius   : 100px; */
 }
 
 .contact-info i {
     font-size    : 35px;
     background   : #fff;
     color        : #d65106;
-    border-radius: 5px;
+    border-radius: 4px;
     width        : 60px;
     height       : 62px;
     line-height  : 62px;
@@ -374,8 +374,7 @@ body {
 .copyright .lead a {
     cursor         : pointer;
     text-decoration: none;
-    color          : rgb(252, 15, 106);
-
+    color          : var(--orange-color);
 }
 
 .copyright .lead a:hover {
@@ -387,10 +386,12 @@ body {
     bottom          : 10px;
     background-color: var(--orange-color);
     color           : #fff;
-    padding         : 11px;
-    font-size       : 16px;
+    font-size       : 18px;
     border-radius   : 4px;
-    line-height     : 20px;
+    line-height     : 50px;
+    width           : 50px;
+    height          : 50px;
+    text-align      : center;
 }
 
 /* End Footer  */
